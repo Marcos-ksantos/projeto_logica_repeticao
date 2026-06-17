@@ -41,3 +41,23 @@ btnFrase.addEventListener('click', (evt)=> {
         divFrase.innerHTML += `${i + 1} - ${frase} <br>`
     }
 })
+
+//COLEÇÃO DE DADOS  - ARRAY
+
+const letras = ['a' , 'b' , 'c' , 'd' , 'e']
+const divArray = document.querySelector('#div-array')
+
+
+
+for(i = 0;i <5;i ++){
+    divArray.innerHTML += `${letras[i]} <br>`
+}
+
+
+//FOR IN
+const divForIN = document.querySelector('#div-forin')
+
+for(let posicao in letras){
+    divForIN.innerHTML += `${letras[posicao]}<br>`
+}
+
