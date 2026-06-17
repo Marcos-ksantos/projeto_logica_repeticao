@@ -1,11 +1,11 @@
 //ESTRUTURA DE REPETIÇÃO FOR
 const divFor = document.querySelector('#div-for')
 
-for(i = 0;i < 20; i++ ){
+for(i = 0;i < 20; i++ )
     console.log(i, 'lorena')
 
     divFor.innerHTML += `${i} - Lorena <br>`
-}
+
 
 //CONTADOR/ACUMULADOR
 
@@ -77,6 +77,8 @@ letras.forEach ((elemento, posicao)=>{
     divForEach.innerHTML += `${posicao + 1} - ${elemento} <br>`
 })
 
+//LISTA OBJETO LITRAL - FOR
+
 const pessoas = [
     {nome: 'Maria Flor', idade: 25, renda: 8500},
     {nome: 'Joerdison Souza', idade: 75, renda: 5000},
@@ -84,3 +86,11 @@ const pessoas = [
     {nome: 'Chicó', idade: 36, renda: 100},
     {nome: 'João Grilo', idade: 32, renda: 80},
 ]
+
+//LISTANDO OBJETO LITERAL - FOR
+const divListaObjFor = document.querySelector('#div-listaobj-for')
+
+for(i = 0 ; i < pessoas.length;i++){
+    divListaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade}R$
+     ${pessoas[i].renda.toFixed(2).replace('.','.')} <br>`
+}
