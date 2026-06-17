@@ -61,3 +61,10 @@ for(let posicao in letras){
     divForIN.innerHTML += `${letras[posicao]}<br>`
 }
 
+//FOR OF
+
+const divForOf = document.querySelector('#div-forof')
+
+for(let elemento of letras){
+    divForOf.innerHTML += `${elemento} <br>`
+}
