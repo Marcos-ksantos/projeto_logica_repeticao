@@ -32,4 +32,3 @@ const inputFrase = document.querySelector('#frase')
 const inputNumRepeticao = document.querySelector('#num-repeticao')
 const btnFrase = document.querySelector('#btn-frase')
 const divFrase = document.querySelector('#divfrase')
-   
