@@ -13,3 +13,23 @@ const ImputNum = document.querySelector('#num')
 const btnNum = document.querySelector('#btn-num')
 const divContNum = document.querySelector('#div-cont-acum')
 
+let cont = 0
+let acum = 0.0
+
+btnNum.addEventListener('click', (evt)=>{
+     let numDigitado = Number(inputNum.value)
+
+     cont++
+     acum += mumDigitado
+     divContAcum.innerHTML = 'TOTAL E NÚMEROS DIGITADOS É ${cont} <br> A SOMA DOS NÚMEROS É : ${Acum}'
+
+     inputNum.value
+
+})
+
+//CONTROLANDO FOR
+const inputFrase = document.querySelector('#frase')
+const inputNumRepeticao = document.querySelector('#num-repeticao')
+const btnFrase = document.querySelector('#btn-frase')
+const divFrase = document.querySelector('#divfrase')
+   
