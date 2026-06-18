@@ -91,6 +91,40 @@ const pessoas = [
 const divListaObjFor = document.querySelector('#div-listaobj-for')
 
 for(i = 0 ; i < pessoas.length;i++){
-    divListaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade}R$
+    divListaObjFor.innerHTML += `${pessoas[i].nome} - ${pessoas[i].idade} - R$
      ${pessoas[i].renda.toFixed(2).replace('.','.')} <br>`
 }
+
+//LISTANDO OBJETO LITERAL - FOR/IN
+
+const divListaObjForIn = document.querySelector
+('#div-listaobj-forin')
+
+for(let indice in pessoas){
+    divListaObjForIn.innerHTML += `${indice} - ${pessoas[indice].nome} -
+    ${pessoas[indice].idade} - R$ ${pessoas[indice].renda.toFixed(2).replace ('.','.')} <br>`
+}
+
+//LISTANDO OBJETO LITERAL - FOR/OFF
+
+const divListaObjForOff = document.querySelector
+('#div-listaobj-foroff')
+
+let contForOf = 0
+
+for(let elem of pessoas){
+    contForOf ++
+
+    divListaObjForOff.innerHTML += `${contForOf} - ${elem.nome},
+    ${elem.idade} - R$ ${elem.renda.toFixed(2).replace ('.','.')} <br>`
+}
+
+//LISTANDO OBJETO LITERAL - FOR/EACH
+
+const divListaObjForEach = document.querySelector
+('#div-listaobj-foreach')
+
+pessoas.forEach((elem, i)=>{
+    divListaObjForEach.innerHTML += `${i + 1} - ${elem.nome} -
+    ${elem.idade} - R$ ${elem.renda.toFixed(2).replace ('.','.')} <br>`
+})
