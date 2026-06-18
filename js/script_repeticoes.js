@@ -87,6 +87,14 @@ const pessoas = [
     {nome: 'João Grilo', idade: 32, renda: 80},
 ]
 
+/* MANIPULANDO ARRAY
+ADCIONANDO ELEMENTOS NO ARRAY*/  
+
+pessoas.push({nome: "Marcos", idade: 18, renda: 1833})
+pessoas.unshift({nome: "Babu", idade: 18, renda: 1400})
+//SPLICE ADD
+pessoas.splice(0,0,{nome: "BILU", idade: 1800, renda: 0})
+
 //LISTANDO OBJETO LITERAL - FOR
 const divListaObjFor = document.querySelector('#div-listaobj-for')
 
