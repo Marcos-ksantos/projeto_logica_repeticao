@@ -93,7 +93,16 @@ ADCIONANDO ELEMENTOS NO ARRAY*/
 pessoas.push({nome: "Marcos", idade: 18, renda: 1833})
 pessoas.unshift({nome: "Babu", idade: 18, renda: 1400})
 //SPLICE ADD
+
 pessoas.splice(0,0,{nome: "BILU", idade: 1800, renda: 0})
+
+//EXCLUIR ULTIMMO ELEMENTO DO ARRAY
+
+pessoas.pop()
+
+//EXIBIR QUANTIDADE DE ELEMENTOS EM ARRAY
+
+console.log('TOTL DE ELEMENTOS DO ARRAY - ',pessoas.length)
 
 //LISTANDO OBJETO LITERAL - FOR
 const divListaObjFor = document.querySelector('#div-listaobj-for')
