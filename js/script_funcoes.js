@@ -1,4 +1,4 @@
-function mensagem(){
+/*function mensagem(){
     console.log('marcos')
 }
 mensagem()
@@ -61,7 +61,7 @@ const intervalo = setInterval(()=>{
 
 let contVolta = 0, numSorteado = 0
 
-const sorteio = setInterval(()=>{
+const sorteo = setInterval(()=>{
     contVolta++
 
     numSorteado = parseInt(Math.random() * 60)
@@ -74,9 +74,40 @@ const sorteio = setInterval(()=>{
         console.log('---->SORTEIO ENCERRADO<----')
 
         divNumSorteio.innerHTML += '---->SORTEIO ENCERRADO<----'
-        clearInterval(sorteio)
+        clearInterval(sorteo)
         contVolta = 0
         numSorteado = 0
     }
-}, 2000)
+}, 2000)*/
 
+const divNumSorteio = document.querySelector('#div-num-sorteio')
+
+let contVolt = 0, numSortead = 0, contPar = 0, contImpar = 0
+
+const sorteio = setInterval(() => {
+    contVolt++
+
+    numSortead = parseInt(Math.random() * 60)
+
+    console.log(`${contVolt} o número sorteado ${numSortead}`)
+
+    if (numSortead % 2 == 0) {
+        contPar++
+    } else {
+        contImpar++
+    }
+    divNumSorteio.innerHTML += `${contVolt} numero gerado ${numSortead}- ${numSortead % 2 == 0 ? 'par' : 'impar'}<br>`
+
+    if (contVolt == 6) {
+        console.log('--->ENCERRADO<---')
+    }
+    
+    divNumSorteio.innerHTML += `-->ENCERRADO<--<br>
+    TOTAL GERADOS${contVolt}<br>
+    TOTAL PAR ${contPar}<br>
+    TOTAL IMPAR ${contImpar}<br>
+    `
+    clearInterval(sorteio)
+    contVolt = 0
+    numSortead = 0
+})
