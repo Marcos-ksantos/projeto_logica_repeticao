@@ -1,3 +1,4 @@
+import { calculoPercentual } from "./script_calculos.js"
 /*function mensagem(){
     console.log('marcos')
 }
@@ -80,7 +81,7 @@ const sorteo = setInterval(()=>{
     }
 }, 2000)*/
 
-const divNumSorteio = document.querySelector('#div-num-sorteio')
+/*const divNumSorteio = document.querySelector('#div-num-sorteio')
 
 let contVolt = 0, numSortead = 0, contPar = 0, contImpar = 0
 
@@ -111,3 +112,8 @@ const sorteio = setInterval(() => {
     contVolt = 0
     numSortead = 0
 },1000)
+*/
+
+
+//CHAMANDO FUNÇÃO DE OUTRO ARQUIVO
+console.log('CÁLCULO DA FUNÇÃO calculoPercentual DO ARQUIVO scripts_calculos.js ---->', calculoPercentual(750))
