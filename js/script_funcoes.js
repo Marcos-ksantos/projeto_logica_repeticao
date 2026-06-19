@@ -110,4 +110,4 @@ const sorteio = setInterval(() => {
     clearInterval(sorteio)
     contVolt = 0
     numSortead = 0
-})
+},1000)
